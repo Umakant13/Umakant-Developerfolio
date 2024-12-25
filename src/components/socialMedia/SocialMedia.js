@@ -1,5 +1,5 @@
 import React from "react";
-import { socialMediaLinks } from "../../portfolio";
+import {socialMediaLinks} from "../../portfolio";
 import "./SocialMedia.scss";
 
 export default function socialMedia() {
@@ -44,8 +44,6 @@ export default function socialMedia() {
         </a>
       ) : null}
 
-
-
       {socialMediaLinks.instagram ? (
         <a
           href={socialMediaLinks.instagram}
@@ -57,7 +55,6 @@ export default function socialMedia() {
           <span></span>
         </a>
       ) : null}
-      
 
       {socialMediaLinks.stackoverflow ? (
         <a
@@ -71,19 +68,19 @@ export default function socialMedia() {
         </a>
       ) : null}
 
-{socialMediaLinks.leetcode ? (
+      {socialMediaLinks.leetcode ? (
         <a
           href={socialMediaLinks.leetcode}
           className="icon-button leetcode"
           target="_blank"
           rel="noopener noreferrer"
         >
-    <i className="fas fa-code"></i>
+          <i className="fas fa-code"></i>
 
           <span></span>
         </a>
       ) : null}
-      
+
       {socialMediaLinks.geeksforgeeks ? (
         <a
           href={socialMediaLinks.geeksforgeeks}
@@ -91,11 +88,11 @@ export default function socialMedia() {
           target="_blank"
           rel="noopener noreferrer"
         >
-    <i className="fas fa-laptop-code"></i> {/* Note: Use 'fas' for solid icons */}
+          <i className="fas fa-laptop-code"></i>{" "}
+          {/* Note: Use 'fas' for solid icons */}
           <span></span>
         </a>
       ) : null}
-      
     </div>
   );
 }

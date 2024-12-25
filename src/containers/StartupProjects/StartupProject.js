@@ -124,7 +124,7 @@ export default function StartupProject() {
                                 </ul>
                               </div>
                             )}
-{project.techStack.database &&
+                          {project.techStack.database &&
                             project.techStack.database.length > 0 && (
                               <div className="tech-group">
                                 <strong>Database</strong>
@@ -166,7 +166,6 @@ export default function StartupProject() {
                                 </ul>
                               </div>
                             )}
-                          
                         </div>
                       </div>
                     )}

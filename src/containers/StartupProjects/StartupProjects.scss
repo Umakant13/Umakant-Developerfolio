@@ -4,7 +4,7 @@
   max-width: 100%;
   height: auto;
   width: 100%;
-  object-fit:contain;
+  object-fit: contain;
 }
 .card-title {
   color: $titleColor;
@@ -58,7 +58,7 @@
   display: flex;
   justify-content: baseline;
   align-items: center;
-  img{
+  img {
     height: 100%;
     width: auto;
   }
@@ -88,13 +88,11 @@
   transition: 0.2s ease-in;
 }
 
-
 @media (max-width: 768px) {
   .project-subtitle {
     font-size: 16px;
     text-align: center;
   }
-
 }
 
 .project-tech-stack {
@@ -108,7 +106,7 @@
 
   .tech-group {
     width: 30%; /* Controls the width of each group */
-    
+
     strong {
       font-weight: bold;
       font-size: 1.1rem;
@@ -140,24 +138,24 @@
   .tech-group {
     width: 30%;
 
-&.database {
-  strong {
-    font-weight: bold;
-    font-size: 1.1rem;
-    color: $cardSubtitle;
-  }
+    &.database {
+      strong {
+        font-weight: bold;
+        font-size: 1.1rem;
+        color: $cardSubtitle;
+      }
 
-  ul {
-    list-style: none;
-    padding: 0;
-    margin-top: 10px;
+      ul {
+        list-style: none;
+        padding: 0;
+        margin-top: 10px;
 
-    li {
-      margin: 5px 0;
-      font-size: 1rem;
-      color: $cardSubtitle;
+        li {
+          margin: 5px 0;
+          font-size: 1rem;
+          color: $cardSubtitle;
+        }
+      }
     }
   }
-}
-}
 }

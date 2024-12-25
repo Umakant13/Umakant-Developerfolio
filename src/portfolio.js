@@ -26,7 +26,7 @@ const greeting = {
     "A passionate Full Stack Software Developer 🚀 with experience in building web applications using JavaScript, Angular, Node.js, and expertise in backend technologies like Java and Spring Boot."
   ),
   resumeLink:
-  "https://drive.google.com/file/d/1O_GwIoWl-Ev8fqVaJnVGbwGEGcqI9FgA/view?usp=sharing",
+    "https://drive.google.com/file/d/1O_GwIoWl-Ev8fqVaJnVGbwGEGcqI9FgA/view?usp=sharing",
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -38,8 +38,8 @@ const socialMediaLinks = {
   gmail: "umakantdodtalle0@gmail.com",
   instagram: "https://www.instagram.com/umakant.dodtalle/",
   stackoverflow: "https://stackoverflow.com/users/26318485/umakant-dodtalle",
-  leetcode:"https://leetcode.com/u/umakant_dodtalle/",
-  geeksforgeeks:"https://www.geeksforgeeks.org/user/umakantdodtalle/",
+  leetcode: "https://leetcode.com/u/umakant_dodtalle/",
+  geeksforgeeks: "https://www.geeksforgeeks.org/user/umakantdodtalle/",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -57,18 +57,10 @@ const skillsSection = {
     emoji(
       "⚡ Build robust backend services and APIs using Spring Boot and Hibernate frameworks"
     ),
-    emoji(
-      "⚡ Proficient in database design and management with MySQL"
-    ),
-    emoji(
-      "⚡ Version control and collaboration using Git and GitHub"
-    ),
-    emoji(
-      "⚡ Efficient API testing and debugging using Postman"
-    ),
-    emoji(
-      "⚡ Integration of third-party services such as Render"
-    )  
+    emoji("⚡ Proficient in database design and management with MySQL"),
+    emoji("⚡ Version control and collaboration using Git and GitHub"),
+    emoji("⚡ Efficient API testing and debugging using Postman"),
+    emoji("⚡ Integration of third-party services such as Render")
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -119,7 +111,6 @@ https://fontawesome.com/icons?d=gallery */
       skillName: "Postman",
       fontAwesomeClassname: "fas fa-envelope" // Use an envelope icon as a placeholder
     }
-
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -141,14 +132,14 @@ const educationInfo = {
       logo: require("./assets/images/HSC.png"), // Replace with the actual path to the SMM International School logo
       subHeader: "12th Grade (Science)",
       duration: "June 2018 - February 2020",
-      desc: "Graduated with 78.62%, focusing on Science stream with strong performance in Mathematics, Physics, and Chemistry.",
+      desc: "Graduated with 78.62%, focusing on Science stream with strong performance in Mathematics, Physics, and Chemistry."
     },
     {
       schoolName: "Secondary School Certificate (SSC)",
       logo: require("./assets/images/HSC.png"), // Replace with the actual path to the SSC logo
       subHeader: "10th Grade",
       duration: "June 2017 - March 2018",
-      desc: "Graduated with 85.00%, excelling in subjects like Mathematics, Science, and English.",
+      desc: "Graduated with 85.00%, excelling in subjects like Mathematics, Science, and English."
     }
   ]
 };
@@ -234,12 +225,14 @@ const openSource = {
 
 const bigProjects = {
   title: "Notable Projects",
-  subtitle: "DEPLOYED PROJECTS DEMONSTRATING MY EXPERTISE IN BUILDING WEB APPLICATIONS AND MARKETPLACE PLATFORMS",
+  subtitle:
+    "DEPLOYED PROJECTS DEMONSTRATING MY EXPERTISE IN BUILDING WEB APPLICATIONS AND MARKETPLACE PLATFORMS",
   projects: [
     {
       image: require("./assets/images/food-del.webp"),
       projectName: "Smart Food Delivery",
-      projectDesc: "A fully functional food ordering and delivery platform with a sleek UI and seamless backend integration.",
+      projectDesc:
+        "A fully functional food ordering and delivery platform with a sleek UI and seamless backend integration.",
       techStack: {
         frontend: ["React JS", "TypeScript"],
         backend: ["Express", "Node.js"],
@@ -249,13 +242,11 @@ const bigProjects = {
       footerLink: [
         {
           name: "View Code",
-          url: "https://github.com/Umakant13/food-del",
-
+          url: "https://github.com/Umakant13/food-del"
         },
         {
           name: "View Live",
-          url: "https://food-del-frontend-8as7.onrender.com/",
-
+          url: "https://food-del-frontend-8as7.onrender.com/"
         }
         //  you can add extra buttons here.
       ]
@@ -263,7 +254,8 @@ const bigProjects = {
     {
       image: require("./assets/images/switfcart.jpeg"),
       projectName: "SwiftCart - A Shop Network",
-      projectDesc: "An interactive and efficient marketplace platform, optimized for scalability.",
+      projectDesc:
+        "An interactive and efficient marketplace platform, optimized for scalability.",
       techStack: {
         frontend: ["Angular", "TypeScript"],
         backend: ["Spring Boot"],
@@ -284,7 +276,8 @@ const bigProjects = {
     {
       image: require("./assets/images/jobportal.jpg"),
       projectName: "HireHub - A Job Portal Application",
-      projectDesc: "A comprehensive job portal application connecting employers and job seekers with advanced search and management features.",
+      projectDesc:
+        "A comprehensive job portal application connecting employers and job seekers with advanced search and management features.",
       techStack: {
         frontend: ["React"],
         backend: ["Spring Boot"],
@@ -300,8 +293,7 @@ const bigProjects = {
           url: "https://jobhook.onrender.com/"
         }
       ]
-    },
-
+    }
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -311,8 +303,9 @@ const bigProjects = {
 
 const achievementSection = {
   title: emoji("Achievements And Certifications 🏆 "),
-  
-  subtitle: "Achievements, Certifications, Recognitions and Some Cool Stuff that I have done !",
+
+  subtitle:
+    "Achievements, Certifications, Recognitions and Some Cool Stuff that I have done !",
 
   achievementsCards: [
     {
@@ -329,12 +322,13 @@ const achievementSection = {
         {
           name: "Project Demonstration",
           url: "https://drive.google.com/file/d/1FkRnN6I8BO9MM8KPGdHopTUTICax7aUh/view?usp=sharing"
-        },
+        }
       ]
     },
     {
       title: "JSCOE HACKFEST 2024",
-      subtitle:  "Developed a deep learning model for retinal disease classification, earning a certificate at JSCOE HACKFEST 2024.",
+      subtitle:
+        "Developed a deep learning model for retinal disease classification, earning a certificate at JSCOE HACKFEST 2024.",
       image: require("./assets/images/jspm.jpeg"),
       imageAlt: "Retinal Disease Classification Logo",
       footerLink: [
@@ -347,18 +341,19 @@ const achievementSection = {
 
     {
       title: "Research Paper Publication ",
-      subtitle: 
-      "Published a research paper on Retinal Diseases Classification in the International Journal of Scientific Research in Engineering and Management (IJSREM).",
+      subtitle:
+        "Published a research paper on Retinal Diseases Classification in the International Journal of Scientific Research in Engineering and Management (IJSREM).",
       image: require("./assets/images/ijsrem.png"),
       imageAlt: "ijsrem Logo",
       footerLink: [
         {
           name: "View Research Paper",
-          url: "https://drive.google.com/file/d/1R4G2zCliynYsNzGiDj2f2YEr4lQRUvTD/view?usp=drive_link"},
-          {
-            name: "Research Paper DOI",
-            url: "https://doi.org/10.55041/IJSREM29420"
-          }
+          url: "https://drive.google.com/file/d/1R4G2zCliynYsNzGiDj2f2YEr4lQRUvTD/view?usp=drive_link"
+        },
+        {
+          name: "Research Paper DOI",
+          url: "https://doi.org/10.55041/IJSREM29420"
+        }
       ]
     }
   ],
@@ -436,7 +431,8 @@ const resumeSection = {
 
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
-  subtitle: "As a fresher, I'm eager to explore new opportunities and connect with professionals in the industry.",
+  subtitle:
+    "As a fresher, I'm eager to explore new opportunities and connect with professionals in the industry.",
   number: "+91 7709273762",
   email_address: "umakantdodtalle0@gmail.com"
 };
@@ -452,8 +448,18 @@ const twitterDetails = {
 const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
 
 export {
-  achievementSection, bigProjects, contactInfo, educationInfo, greeting, illustration, isHireable, openSource, resumeSection, skillsSection, socialMediaLinks,
-  splashScreen, techStack,
+  achievementSection,
+  bigProjects,
+  contactInfo,
+  educationInfo,
+  greeting,
+  illustration,
+  isHireable,
+  openSource,
+  resumeSection,
+  skillsSection,
+  socialMediaLinks,
+  splashScreen,
+  techStack,
   workExperiences
 };
-
