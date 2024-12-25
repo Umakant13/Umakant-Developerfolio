@@ -261,23 +261,23 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/image.jpg"),
-      projectName: "Multi-Vendor Marketplace",
-      projectDesc: "An interactive and efficient multi-vendor marketplace platform, optimized for scalability.",
+      image: require("./assets/images/switfcart.jpeg"),
+      projectName: "SwiftCart - A Shop Network",
+      projectDesc: "An interactive and efficient marketplace platform, optimized for scalability.",
       techStack: {
-        frontend: ["React", "TypeScript"],
+        frontend: ["Angular", "TypeScript"],
         backend: ["Spring Boot"],
         database: ["MySQL"],
-        paymentGateways: ["Razorpay", "Stripe"]
+        paymentGateways: ["Razorpay"]
       },
       footerLink: [
         {
           name: "View Code",
-          url: "https://github.com/Umakant13/multi-vendor-marketplace"
+          url: "https://github.com/Umakant13/SwiftCart"
         },
         {
           name: "View Live",
-          url: "https://multi-vendor-market.vercel.app/"
+          url: "https://ecommerce-angular-blue.vercel.app/"
         }
       ]
     },
