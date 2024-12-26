@@ -1,12 +1,12 @@
-import React, {useState, useEffect, useContext, Suspense, lazy} from "react";
-import "./Project.scss";
-import Button from "../../components/button/Button";
-import {openSource, socialMediaLinks} from "../../portfolio";
-import StyleContext from "../../contexts/StyleContext";
-import Loading from "../../containers/loading/Loading";
+import React, {useState, useEffect, useContext, Suspense, lazy} from 'react';
+import './Project.scss';
+import Button from '../../components/button/Button';
+import {openSource, socialMediaLinks} from '../../portfolio';
+import StyleContext from '../../contexts/StyleContext';
+import Loading from '../../containers/loading/Loading';
 export default function Projects() {
   const GithubRepoCard = lazy(() =>
-    import("../../components/githubRepoCard/GithubRepoCard")
+    import('../../components/githubRepoCard/GithubRepoCard'),
   );
   const FailedLoading = () => null;
   const renderLoader = () => <Loading />;
@@ -16,7 +16,7 @@ export default function Projects() {
 
   useEffect(() => {
     const getRepoData = () => {
-      fetch("/profile.json")
+      fetch('/profile.json')
         .then(result => {
           if (result.ok) {
             return result.json();
@@ -28,9 +28,9 @@ export default function Projects() {
         })
         .catch(function (error) {
           console.error(
-            `${error} (because of this error, nothing is shown in place of Projects section. Also check if Projects section has been configured)`
+            `${error} (because of this error, nothing is shown in place of Projects section. Also check if Projects section has been configured)`,
           );
-          setrepoFunction("Error");
+          setrepoFunction('Error');
         });
     };
     getRepoData();
@@ -40,7 +40,7 @@ export default function Projects() {
     setrepo(array);
   }
   if (
-    !(typeof repo === "string" || repo instanceof String) &&
+    !(typeof repo === 'string' || repo instanceof String) &&
     openSource.display
   ) {
     return (
@@ -51,7 +51,7 @@ export default function Projects() {
             {repo.map((v, i) => {
               if (!v) {
                 console.error(
-                  `Github Object for repository number : ${i} is undefined`
+                  `Github Object for repository number : ${i} is undefined`,
                 );
               }
               return (
@@ -60,7 +60,7 @@ export default function Projects() {
             })}
           </div>
           <Button
-            text={"More Projects"}
+            text={'More Projects'}
             className="project-button"
             href={socialMediaLinks.github}
             newTab={true}

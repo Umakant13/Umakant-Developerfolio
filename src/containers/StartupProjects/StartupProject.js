@@ -1,15 +1,15 @@
-import React, {useContext} from "react";
-import "./StartupProjects.scss";
-import {bigProjects} from "../../portfolio";
-import {Fade} from "react-reveal";
-import StyleContext from "../../contexts/StyleContext";
+import React, {useContext} from 'react';
+import './StartupProjects.scss';
+import {bigProjects} from '../../portfolio';
+import {Fade} from 'react-reveal';
+import StyleContext from '../../contexts/StyleContext';
 
 export default function StartupProject() {
   function openUrlInNewTab(url) {
     if (!url) {
       return;
     }
-    var win = window.open(url, "_blank");
+    var win = window.open(url, '_blank');
     win.focus();
   }
 
@@ -25,8 +25,8 @@ export default function StartupProject() {
           <p
             className={
               isDark
-                ? "dark-mode project-subtitle"
-                : "subTitle project-subtitle"
+                ? 'dark-mode project-subtitle'
+                : 'subTitle project-subtitle'
             }
           >
             {bigProjects.subtitle}
@@ -39,8 +39,8 @@ export default function StartupProject() {
                   key={i}
                   className={
                     isDark
-                      ? "dark-mode project-card project-card-dark"
-                      : "project-card project-card-light"
+                      ? 'dark-mode project-card project-card-dark'
+                      : 'project-card project-card-light'
                   }
                 >
                   {project.image ? (
@@ -54,13 +54,13 @@ export default function StartupProject() {
                   ) : null}
                   <div className="project-detail">
                     <h5
-                      className={isDark ? "dark-mode card-title" : "card-title"}
+                      className={isDark ? 'dark-mode card-title' : 'card-title'}
                     >
                       {project.projectName}
                     </h5>
                     <p
                       className={
-                        isDark ? "dark-mode card-subtitle" : "card-subtitle"
+                        isDark ? 'dark-mode card-subtitle' : 'card-subtitle'
                       }
                     >
                       {project.projectDesc}
@@ -72,8 +72,8 @@ export default function StartupProject() {
                         <h3
                           className={
                             isDark
-                              ? "dark-mode tech-stack-title"
-                              : "tech-stack-title"
+                              ? 'dark-mode tech-stack-title'
+                              : 'tech-stack-title'
                           }
                         >
                           Technology Stack
@@ -90,13 +90,13 @@ export default function StartupProject() {
                                         key={idx}
                                         className={
                                           isDark
-                                            ? "dark-mode card-subtitle"
-                                            : "card-subtitle"
+                                            ? 'dark-mode card-subtitle'
+                                            : 'card-subtitle'
                                         }
                                       >
                                         {tech}
                                       </li>
-                                    )
+                                    ),
                                   )}
                                 </ul>
                               </div>
@@ -113,13 +113,13 @@ export default function StartupProject() {
                                         key={idx}
                                         className={
                                           isDark
-                                            ? "dark-mode card-subtitle"
-                                            : "card-subtitle"
+                                            ? 'dark-mode card-subtitle'
+                                            : 'card-subtitle'
                                         }
                                       >
                                         {tech}
                                       </li>
-                                    )
+                                    ),
                                   )}
                                 </ul>
                               </div>
@@ -134,8 +134,8 @@ export default function StartupProject() {
                                       key={idx}
                                       className={
                                         isDark
-                                          ? "dark-mode card-subtitle"
-                                          : "card-subtitle"
+                                          ? 'dark-mode card-subtitle'
+                                          : 'card-subtitle'
                                       }
                                     >
                                       {db}
@@ -155,13 +155,13 @@ export default function StartupProject() {
                                         key={idx}
                                         className={
                                           isDark
-                                            ? "dark-mode card-subtitle"
-                                            : "card-subtitle"
+                                            ? 'dark-mode card-subtitle'
+                                            : 'card-subtitle'
                                         }
                                       >
                                         {tech}
                                       </li>
-                                    )
+                                    ),
                                   )}
                                 </ul>
                               </div>
@@ -177,7 +177,7 @@ export default function StartupProject() {
                             <span
                               key={i}
                               className={
-                                isDark ? "dark-mode project-tag" : "project-tag"
+                                isDark ? 'dark-mode project-tag' : 'project-tag'
                               }
                               onClick={() => openUrlInNewTab(link.url)}
                             >

@@ -1,6 +1,6 @@
-import React from "react";
-import {socialMediaLinks} from "../../portfolio";
-import "./SocialMedia.scss";
+import React from 'react';
+import {socialMediaLinks} from '../../portfolio';
+import './SocialMedia.scss';
 
 export default function socialMedia() {
   if (!socialMediaLinks.display) {
@@ -88,7 +88,7 @@ export default function socialMedia() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i className="fas fa-laptop-code"></i>{" "}
+          <i className="fas fa-laptop-code"></i>{' '}
           {/* Note: Use 'fas' for solid icons */}
           <span></span>
         </a>
