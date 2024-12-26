@@ -57,6 +57,20 @@
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "dotenv": "^8.2.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.2.11",
     "prettier": "^2.8.8"
+  },
+  "husky": {
+  "hooks": {
+    "pre-commit": "lint-staged"
   }
+},
+"lint-staged": {
+  "*.{js,css,json,scss}": [
+    "prettier --write",
+    "git add"
+  ]
+}
+
 }
